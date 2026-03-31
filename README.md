@@ -1,6 +1,6 @@
 This python script runs in QGIS and takes a geotiff and splits it up into .pngs
 
-Then it instructs you to give the .pngs to whatever AI upscaler you use (e.g bigjpg.com) before putting the upscaled versions into another folder
+Then it upscales the pngs using the ddddsr module
 
 Then it grabs the upscaled versions and puts them all together into a final geotiff
 
