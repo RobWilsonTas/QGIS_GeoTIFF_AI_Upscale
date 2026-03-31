@@ -194,7 +194,7 @@ Apply the super resolution
 clippedTiles = glob.glob(processTileDirectory + '/*.png')
 
 #Prep the super resolution thing
-superResolutionProcessor = ddddsr.SR(model="waifu2x_photo", scale = 4, use_gpu=False)
+superResolutionProcessor = ddddsr.SR(model="waifu2x_photo", scale = 2, use_gpu=False)
 def upscaleFile(inputFile):
     outputFile = aiOutputDirectory + Path(inputFile).stem + '.png'
     superResolutionProcessor(str(inputFile), str(outputFile))
